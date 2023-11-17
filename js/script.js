@@ -23,22 +23,14 @@ const prezzoBase = (viaggioKm * 0,21)
 // console.log("Il prezzo del tuo biglietto base è € ",prezzoBase);
 
 
-// calcola il 20% di sconto per i minorenni
-const scontoMinorenni = ((prezzoBase / 100) * 20);
-
-
-//  calcola il 40% per gli over 65
-const scontoOver = ((prezzoBase / 100) * 40);
-
-
-
-
 if(userAge < 18) {
+    const scontoMinorenni = ((prezzoBase / 100) * 20);
     risultato = (prezzoBase - scontoMinorenni);
 
 
     //  console.log(risultato);
 } else if (userAge > 65){
+    const scontoOver = ((prezzoBase / 100) * 40);
     risultato = (prezzoBase - scontoOver);
 
 
